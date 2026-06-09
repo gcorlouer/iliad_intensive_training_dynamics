@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1781014890.16968 "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/solutions.tex" "solutions.pdf" "solutions" 1781014890.79795 0
-  "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/solutions.tex" 1781014809.07638 27183 9c5849c8d5ed960e0cf6a82ada9fed84 ""
+["pdflatex"] 1781017755.60929 "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/solutions.tex" "solutions.pdf" "solutions" 1781017756.22734 0
+  "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/solutions.tex" 1781017734.29045 27177 a412905bb6963d10b02a8971f88fbe70 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -126,8 +126,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1749050915 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1749050869 3345728 6e9d6b4ca934c854c1520d15fef27576 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "solutions.aux" 1781014890.72199 9278 cf6171fd408366e2c27b06d59b290dc6 "pdflatex"
-  "solutions.tex" 1781014809.07638 27183 9c5849c8d5ed960e0cf6a82ada9fed84 ""
+  "solutions.aux" 1781017756.15589 9206 31fe36740c23ab50924ead890a3a8156 "pdflatex"
+  "solutions.tex" 1781017734.29045 27177 a412905bb6963d10b02a8971f88fbe70 ""
   (generated)
   "solutions.aux"
   "solutions.log"
