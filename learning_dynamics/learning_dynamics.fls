@@ -409,7 +409,7 @@ INPUT ./figures/emergent_misalignment.png
 INPUT ./figures/emergent_misalignment.png
 INPUT ./figures/emergent_misalignment.png
 INPUT ./figures/emergent_misalignment.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -465,7 +465,6 @@ INPUT ./figures/DLN_individual_sv.png
 INPUT ./figures/DLN_individual_sv.png
 INPUT ./figures/DLN_individual_sv.png
 INPUT ./figures/DLN_individual_sv.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT ./figures/golden_path.png
 INPUT ./figures/golden_path.png
 INPUT ./figures/golden_path.png

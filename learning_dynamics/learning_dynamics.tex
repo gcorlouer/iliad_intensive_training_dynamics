@@ -62,16 +62,7 @@
   Jan Betley et al., "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs" (Figure 1)
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figures/emergent_misalignment.png}
 \end{frame}
-\section{Setup}
-\begin{frame}[plain]
-\begin{tikzpicture}[remember picture,overlay]
-\node[inner sep=0pt] at (current page.center) {%
-\begin{beamercolorbox}[wd=.75\paperwidth,sep=1.4em,center,rounded=true,shadow=true]{title}
-{\usebeamerfont{title}\Huge Setup}
-\end{beamercolorbox}
-};
-\end{tikzpicture}
-\end{frame}
+\sectionframe{Setup}
 \begin{frame}{Deep neural network}
 \small
 \begin{columns}[T,onlytextwidth]
@@ -162,9 +153,7 @@ Global minimizers achieve zero loss: $\exists \theta^{\star}\in \Omega,\ \mu(\th
 \\
 The structure of the data is encoded by $\Sigma_{YX}$.
 \end{frame}
-\begin{frame}
-    \centering Geometry
-\end{frame}
+\sectionframe{Geometry}
 \begin{frame}[plain]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figures/global_minima_saddle_3d_loss.png}
@@ -277,11 +266,7 @@ and Statistics}, pages 192–204. PMLR, 2015.
     \item Chen, Po and Jiang, Rujun and Wang, Peng. A Complete Loss Landscape Analysis of Regularized Deep Matrix Factorization, arXiv preprint arXiv:2506.20344, 2025.
 \end{itemize}
 \end{frame}
-\begin{frame}
-    \begin{center}
-        Dynamics 
-    \end{center}
-\end{frame}
+\sectionframe{Dynamics}
 \begin{frame}{Gradient flow and NTK dynamics}
   \small
   In the small-learning-rate limit, gradient descent becomes gradient flow:
@@ -419,10 +404,7 @@ arXiv:1810.02281, 2018
     preprint arXiv:2410.24206, 2024.
     \end{itemize}
 \end{frame}
-\begin{frame}
-    \centering
-    Initialization, Width, and Depth
-\end{frame}
+\sectionframe{Initialization, Width, and Depth}
 \begin{frame}{Training losses}
 Initialize weights: $\theta \sim \mathcal{N}(0,\sigma^{-\gamma/2}I)$
 \\
