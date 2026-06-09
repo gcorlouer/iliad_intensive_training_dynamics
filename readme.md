@@ -1,4 +1,4 @@
-# Lectures and tutorials on implicit regularization and emergence
+# Lectures and tutorials on learning dynamics
 
 Start with the learning_dynamics.pdf lecture and work on the problems in the exercises folder. Verify your answers with the solutions.pdf file in the solutions folder.
 
