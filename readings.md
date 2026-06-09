@@ -13,6 +13,7 @@ The readings are roughly ordered in a way that makes sense for learning. This is
   - Beautiful mathematical treatment of gradient flow in DLNs and a surprising mathematical result relating gradient flow and free-energy minimization. Makes implicit regularization explicit (under balanced assumptions)
 - [Emergent Misalignment is Easy, Narrow Misalignment is Hard
 ](https://arxiv.org/abs/2602.07852)
+  - When fine-tuned on data with harmful inputs, the model generalize in harmful ways on other unrelated datasets.
 - [Self-Stabilization: The Implicit Bias of Gradient Descent at the Edge of Stability
 ](https://arxiv.org/abs/2209.15594)
 - [Beyond Implicit Bias: The Insignificance of SGD Noise in Online Learning
