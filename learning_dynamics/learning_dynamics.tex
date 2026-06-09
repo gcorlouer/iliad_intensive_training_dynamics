@@ -1,5 +1,10 @@
 \documentclass[aspectratio=169,11pt]{beamer}
-\usetheme{Madrid}
+\usetheme[
+  progressbar=frametitle,
+  sectionpage=none,
+  block=fill
+]{moloch}
+\setbeamertemplate{page number in head/foot}[totalframenumber]
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -64,6 +69,7 @@
 \end{tikzpicture}
 \end{frame}
 \begin{frame}{Deep neural network}
+\small
 \begin{columns}[T,onlytextwidth]
 \begin{column}{0.48\textwidth}
 Let $\theta\in \Omega$ be the parameters, let $x\in\mathbb{R}^{d_0}$, and let $W_\ell\in\mathbb{R}^{d_\ell \times d_{\ell-1}}$ with biases $b_\ell$ and activation $\sigma$. With $h_0=x$,
@@ -183,6 +189,7 @@ The saddle points are given by a subset of singular values and (left) singular v
 Reference: \textit{Achour, El Mehdi, François Malgouyres, and Sébastien Gerchinovitz. "The loss landscape of deep linear neural networks: a second-order analysis." Journal of Machine Learning Research 25.242 (2024): 1-76.}
 \end{frame}
 \begin{frame}{Symmetries}
+\small
 Let $G_{\mathbf{d}}:=\prod_{\ell=0}^{L} \operatorname{GL}_{d_\ell}$ act on $\Omega$ via
 \[
 (W_1,\ldots,W_L)
@@ -327,6 +334,7 @@ and Statistics}, pages 192–204. PMLR, 2015.
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figures/foliation_paramaters_balanced.png}
 \end{frame}
 \begin{frame}{The manifold of gradient flow}
+\small
 Gradient flow is constrained to the following hyperbolic manifold:
 \begin{equation*}
     \mathcal{M}_{\beta}
