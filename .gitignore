@@ -1,3 +1,22 @@
-/deprecated
-todo.md
+# Default: do not track generated assets or arbitrary files.
+*
+
+# Keep traversing directories so allowlisted file types can be found.
+!*/
+
+# Keep the repository policy itself.
+!.gitignore
+
+# Public repository contents.
+!*.tex
+!*.pdf
+!*.md
+
+# Private or obsolete notes.
 scratchpad.md
+scratchpat.md
+todo.md
+
+# Do not publish archived or deprecated material.
+archive/
+deprecated/
