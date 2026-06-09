@@ -5,12 +5,18 @@ The readings are roughly ordered in a way that makes sense for learning. This is
   - First-order and second-order classification of critical points in DLN loss landscapes. Classifies strict and non-strict saddles.
 -  Saxe et al. [A mathematical theory of semantic development in deep neural networks](https://www.pnas.org/doi/10.1073/pnas.1820226116)
      - Read the supplementary materials section to understand the exact solution of gradient flow dynamics in deep linear networks
+- [Geometry of fibers of the multiplication map of deep linear neural networks
+](https://arxiv.org/abs/2411.19920) Simon Pepin Lehalleur et al.
+  - Stratifies global minima into orbits using quiver representation theory
+- [The geometry of the deep linear network
+](https://arxiv.org/abs/2411.09004) Govind Menon
+  - Beautiful mathematical treatment of gradient flow in DLNs and a surprising mathematical result relating gradient flow and free-energy minimization. Makes implicit regularization explicit (under balanced assumptions)
+- [Emergent Misalignment is Easy, Narrow Misalignment is Hard
+](https://arxiv.org/abs/2602.07852)
 - [Self-Stabilization: The Implicit Bias of Gradient Descent at the Edge of Stability
 ](https://arxiv.org/abs/2209.15594)
 - [Beyond Implicit Bias: The Insignificance of SGD Noise in Online Learning
 ](https://arxiv.org/abs/2306.08590)
-- [Emergent Misalignment is Easy, Narrow Misalignment is Hard
-](https://arxiv.org/abs/2602.07852)
 ## Loss landscape geometry
 - [Deep Learning without Poor Local Minima
 ](https://arxiv.org/abs/1605.07110), Kenji Kawaguchi
