@@ -14,6 +14,9 @@ The readings are roughly ordered in a way that makes sense for learning. This is
 - [Emergent Misalignment is Easy, Narrow Misalignment is Hard
 ](https://arxiv.org/abs/2602.07852)
   - When fine-tuned on data with harmful inputs, the model generalize in harmful ways on other unrelated datasets.
+- [Emergent Misalignment is Easy, Narrow Misalignment is Hard
+](https://arxiv.org/abs/2602.07852)
+  - By regularizing, we can mitigate emergent misalignment
 - Literature Review: [There Will Be a Scientific Theory of Deep Learning](https://arxiv.org/abs/2604.21691)
 - [Self-Stabilization: The Implicit Bias of Gradient Descent at the Edge of Stability
 ](https://arxiv.org/abs/2209.15594)
