@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.4)  9 JUN 2026 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.4)  9 JUN 2026 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -784,15 +784,15 @@ Package caption Info: End \AtBeginDocument code.
 [5
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 85.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 90.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) (./figures/deep_neural_network.tex)
@@ -816,10 +816,10 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 [10
 
 ]
-<figures/global_minima_saddle_3d_loss.png, id=359, 1678.27pt x 944.52875pt>
+<figures/global_minima_saddle_3d_loss.png, id=362, 1678.27pt x 944.52875pt>
 File: figures/global_minima_saddle_3d_loss.png Graphic file (type png)
 <use figures/global_minima_saddle_3d_loss.png>
-Package pdftex.def Info: figures/global_minima_saddle_3d_loss.png  used on input line 143.
+Package pdftex.def Info: figures/global_minima_saddle_3d_loss.png  used on input line 161.
 (pdftex.def)             Requested size: 432.49867pt x 243.40984pt.
 
 
@@ -835,11 +835,11 @@ Package pdftex.def Info: figures/global_minima_saddle_3d_loss.png  used on input
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 183.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 183.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 183.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 205.
 
 
 [14
@@ -866,11 +866,11 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 265.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 302.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 265.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 302.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 265.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 302.
 
 
 [20
@@ -880,10 +880,10 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
 [21
 
 ]
-<figures/foliation_paramaters_balanced.png, id=740, 1678.27pt x 944.52875pt>
+<figures/foliation_paramaters_balanced.png, id=742, 1678.27pt x 944.52875pt>
 File: figures/foliation_paramaters_balanced.png Graphic file (type png)
 <use figures/foliation_paramaters_balanced.png>
-Package pdftex.def Info: figures/foliation_paramaters_balanced.png  used on input line 283.
+Package pdftex.def Info: figures/foliation_paramaters_balanced.png  used on input line 328.
 (pdftex.def)             Requested size: 432.49867pt x 243.40984pt.
 
 
@@ -894,10 +894,10 @@ Package pdftex.def Info: figures/foliation_paramaters_balanced.png  used on inpu
 [23
 
 ]
-<figures/edge_of_stability.png, id=808, 1082.0425pt x 299.1175pt>
+<figures/edge_of_stability.png, id=809, 1082.0425pt x 299.1175pt>
 File: figures/edge_of_stability.png Graphic file (type png)
 <use figures/edge_of_stability.png>
-Package pdftex.def Info: figures/edge_of_stability.png  used on input line 329.
+Package pdftex.def Info: figures/edge_of_stability.png  used on input line 382.
 (pdftex.def)             Requested size: 433.33768pt x 119.79092pt.
 
 
@@ -916,30 +916,30 @@ Package pdftex.def Info: figures/edge_of_stability.png  used on input line 329.
 [27
 
 ]
-<figures/DLN_losses_regimes.png, id=935, 1075.8594pt x 352.6776pt>
+<figures/DLN_losses_regimes.png, id=936, 1075.8594pt x 352.6776pt>
 File: figures/DLN_losses_regimes.png Graphic file (type png)
 <use figures/DLN_losses_regimes.png>
-Package pdftex.def Info: figures/DLN_losses_regimes.png  used on input line 374.
+Package pdftex.def Info: figures/DLN_losses_regimes.png  used on input line 427.
 (pdftex.def)             Requested size: 415.80774pt x 136.30597pt.
 
 
 [28
 
  <./figures/DLN_losses_regimes.png>]
-<figures/DLN_sv_students.png, id=964, 901.9296pt x 208.1376pt>
+<figures/DLN_sv_students.png, id=965, 901.9296pt x 208.1376pt>
 File: figures/DLN_sv_students.png Graphic file (type png)
 <use figures/DLN_sv_students.png>
-Package pdftex.def Info: figures/DLN_sv_students.png  used on input line 381.
+Package pdftex.def Info: figures/DLN_sv_students.png  used on input line 434.
 (pdftex.def)             Requested size: 433.34792pt x 100.00336pt.
 
 
 [29
 
  <./figures/DLN_sv_students.png>]
-<figures/DLN_individual_sv.png, id=994, 896.148pt x 858.5676pt>
+<figures/DLN_individual_sv.png, id=995, 896.148pt x 858.5676pt>
 File: figures/DLN_individual_sv.png Graphic file (type png)
 <use figures/DLN_individual_sv.png>
-Package pdftex.def Info: figures/DLN_individual_sv.png  used on input line 388.
+Package pdftex.def Info: figures/DLN_individual_sv.png  used on input line 441.
 (pdftex.def)             Requested size: 190.5349pt x 182.54472pt.
 
 
@@ -978,10 +978,10 @@ Package pdftex.def Info: figures/DLN_individual_sv.png  used on input line 388.
 [38
 
 ]
-<figures/golden_path.png, id=1258, 1144.275pt x 768.8725pt>
+<figures/golden_path.png, id=1256, 1144.275pt x 768.8725pt>
 File: figures/golden_path.png Graphic file (type png)
 <use figures/golden_path.png>
-Package pdftex.def Info: figures/golden_path.png  used on input line 519.
+Package pdftex.def Info: figures/golden_path.png  used on input line 582.
 (pdftex.def)             Requested size: 217.34467pt x 146.04639pt.
 
 
@@ -992,20 +992,20 @@ Package pdftex.def Info: figures/golden_path.png  used on input line 519.
 [40
 
 ]
-<figures/neural_race.png, id=1314, 783.92876pt x 335.2525pt>
+<figures/neural_race.png, id=1312, 783.92876pt x 335.2525pt>
 File: figures/neural_race.png Graphic file (type png)
 <use figures/neural_race.png>
-Package pdftex.def Info: figures/neural_race.png  used on input line 529.
+Package pdftex.def Info: figures/neural_race.png  used on input line 592.
 (pdftex.def)             Requested size: 387.02321pt x 165.51576pt.
 
 
 [41
 
  <./figures/neural_race.png>]
-<figures/simplicity_bias_transformers_mlp.png, id=1344, 1000.73875pt x 566.115pt>
+<figures/simplicity_bias_transformers_mlp.png, id=1342, 1000.73875pt x 566.115pt>
 File: figures/simplicity_bias_transformers_mlp.png Graphic file (type png)
 <use figures/simplicity_bias_transformers_mlp.png>
-Package pdftex.def Info: figures/simplicity_bias_transformers_mlp.png  used on input line 538.
+Package pdftex.def Info: figures/simplicity_bias_transformers_mlp.png  used on input line 601.
 (pdftex.def)             Requested size: 249.558pt x 141.17719pt.
 
 
@@ -1038,18 +1038,18 @@ Package rerunfilecheck Info: File `learning_dynamics.out' has not changed.
 (rerunfilecheck)             Checksum: 80F60D22272F87715F8202826579330A;68.
  ) 
 Here is how much of TeX's memory you used:
- 26988 strings out of 473190
- 539892 string characters out of 5715801
- 928612 words of memory out of 5000000
- 49635 multiletter control sequences out of 15000+600000
- 573133 words of font info for 86 fonts, out of 8000000 for 9000
+ 26986 strings out of 473190
+ 539679 string characters out of 5715801
+ 931282 words of memory out of 5000000
+ 49631 multiletter control sequences out of 15000+600000
+ 573733 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,474b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on learning_dynamics.pdf (44 pages, 3815824 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on learning_dynamics.pdf (44 pages, 3825204 bytes).
 PDF statistics:
- 1555 PDF objects out of 1728 (max. 8388607)
- 1296 compressed objects within 13 object streams
+ 1557 PDF objects out of 1728 (max. 8388607)
+ 1297 compressed objects within 13 object streams
  90 named destinations out of 1000 (max. 500000)
- 660 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 654 words of extra memory for PDF output out of 10000 (max. 10000000)
 
