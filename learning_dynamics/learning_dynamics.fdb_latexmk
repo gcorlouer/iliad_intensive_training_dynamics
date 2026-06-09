@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1781013363.50472 "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" "learning_dynamics.pdf" "learning_dynamics" 1781013366.15864 0
-  "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" 1781012496.752 23941 fe88c8d7ab1fcd86c16bae0b7e664b40 ""
+["pdflatex"] 1781014019.29048 "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" "learning_dynamics.pdf" "learning_dynamics" 1781014021.93512 0
+  "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" 1781014014.98747 24206 71cd0c0cf02f0db369ec4a329d10d005 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -241,15 +241,16 @@
   "figures/DLN_sv_students.png" 1780663283.20951 64112 b53c8e72c74d8c5bdc364da6d58cb616 ""
   "figures/deep_neural_network.tex" 1780661270.09551 2148 d7e4c025e1325c18c25e2044a85a33f3 ""
   "figures/edge_of_stability.png" 1780668552.54651 129507 e64636936776fa4213c1a1b22f3905e4 ""
+  "figures/emergent_misalignment.png" 1781013890.90575 237219 5c9cb8aef5fe15d2d4a9543843bb3f5f ""
   "figures/foliation_paramaters_balanced.png" 1780669556.05971 1286726 d4070cc2ec3f18c9b7a68c2db9e3d829 ""
   "figures/global_minima_saddle_3d_loss.png" 1780664084.80645 1397795 ca228cbdbca0c91fd86021103c37516a ""
   "figures/golden_path.png" 1780663283.20888 203382 0b8afde2fcaba47d49f9f52caeb12a2b ""
   "figures/neural_race.png" 1780663283.2077 44392 cdd2b05758b88983f3aa692a1905d0a5 ""
   "figures/simplicity_bias_transformers_mlp.png" 1780663283.20825 162542 1f459dfa9f19cc225271df39a777ad0c ""
-  "learning_dynamics.aux" 1781013366.06235 6516 2fead65b842ed7e6f5c6c31228ae6e61 "pdflatex"
-  "learning_dynamics.nav" 1781013366.0636 4409 b78ae6986afe5f9481b172c36643169a "pdflatex"
-  "learning_dynamics.out" 1781013366.06324 68 80f60d22272f87715f8202826579330a "pdflatex"
-  "learning_dynamics.tex" 1781012496.752 23941 fe88c8d7ab1fcd86c16bae0b7e664b40 ""
+  "learning_dynamics.aux" 1781014021.84231 6644 33527ae6e3210bc2e7cc6c44bf969ecd "pdflatex"
+  "learning_dynamics.nav" 1781014021.84362 4501 926c9f3d36ba98c52b8a58a015b24ba8 "pdflatex"
+  "learning_dynamics.out" 1781014021.84343 68 80f60d22272f87715f8202826579330a "pdflatex"
+  "learning_dynamics.tex" 1781014014.98747 24206 71cd0c0cf02f0db369ec4a329d10d005 ""
   (generated)
   "learning_dynamics.aux"
   "learning_dynamics.log"
