@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1780672007.05185 "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" "learning_dynamics.pdf" "learning_dynamics" 1780672009.7441 0
-  "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" 1780672005.98853 20380 97403d79ecb9022d428a31ac2c0ea89c ""
+["pdflatex"] 1781001987.43733 "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" "learning_dynamics.pdf" "learning_dynamics" 1781001990.27326 0
+  "/Users/guime/projects/teaching/iliad_intensive/learning_dynamics/learning_dynamics.tex" 1781001986.87759 22431 4a137dbf1d514e00f5a81e8c64fae258 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -240,10 +240,10 @@
   "figures/golden_path.png" 1780663283.20888 203382 0b8afde2fcaba47d49f9f52caeb12a2b ""
   "figures/neural_race.png" 1780663283.2077 44392 cdd2b05758b88983f3aa692a1905d0a5 ""
   "figures/simplicity_bias_transformers_mlp.png" 1780663283.20825 162542 1f459dfa9f19cc225271df39a777ad0c ""
-  "learning_dynamics.aux" 1780672009.65509 6133 e4601904e4399ad0223e6a66d374ad9d "pdflatex"
-  "learning_dynamics.nav" 1780672009.65658 4130 c764eb7869ad3ab96c15bc806b813863 "pdflatex"
-  "learning_dynamics.out" 1780672009.65631 68 80f60d22272f87715f8202826579330a "pdflatex"
-  "learning_dynamics.tex" 1780672005.98853 20380 97403d79ecb9022d428a31ac2c0ea89c ""
+  "learning_dynamics.aux" 1781001990.18517 6520 cf4dc1859aa7a2364784dc1b007ea00a "pdflatex"
+  "learning_dynamics.nav" 1781001990.18675 4409 8959427b9b7f126312fcceb580341d40 "pdflatex"
+  "learning_dynamics.out" 1781001990.18652 68 80f60d22272f87715f8202826579330a "pdflatex"
+  "learning_dynamics.tex" 1781001986.87759 22431 4a137dbf1d514e00f5a81e8c64fae258 ""
   (generated)
   "learning_dynamics.aux"
   "learning_dynamics.log"

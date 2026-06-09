@@ -327,6 +327,16 @@ The loss is non-convex, but the Hessian oscillates slightly above $\frac{2}{\eta
     Ref: \href{https://arxiv.org/abs/2103.00065}{Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability, Cohen et al.}
   \end{minipage}
 \end{frame}
+\begin{frame}{Takeaways}
+  \begin{block}{Key points}
+    \begin{itemize}
+      \item NTK preconditions gradient flow in function space
+      \item Symmetries can induce conserved quantites which constrain the gradient flow
+      \item Gradient flow in function space for balanced quantities lead to self consistent equations
+      \item The effect of learning rate can be understood via the edge of stability
+    \end{itemize}
+  \end{block}
+\end{frame}
 \begin{frame}{References}
     \begin{itemize}
         \item Menon, Govind. The geometry of the deep linear network. Symposium on Probability and Stochastic Processes. Cham: Springer Nature Switzerland, 2023.
@@ -411,6 +421,16 @@ $\gamma = 1$: intermediate regime
   \[
     t=\frac{1}{2s}\,\ln\!\left(\frac{w_f\,(s-w_0)}{w_0\,(s-w_f)}\right), \qquad s\neq 0.
   \]
+\end{frame}
+\begin{frame}{Takeaways}
+  \begin{block}{Key points}
+    \begin{itemize}
+      \item Depth and specific initialization induce a sadde-to-saddle dynamics
+      \item Gradient flow has a simplicity bias: low rank approximation
+      \item Large initialization and width is NTK regime: no feature learning, NTK is frozen
+      \item In saddle to saddle regime, time scale of learning set by the size of singular value of target function
+    \end{itemize}
+  \end{block}
 \end{frame}
 \begin{frame}{References}
     \begin{itemize}
@@ -497,7 +517,6 @@ Information Processing Systems}, 37:106059–106104, 2024.
   \footnotesize
   \emph{Beyond Implicit Bias: The Insignificance of SGD Noise in Online Learning}
 \end{frame}
-
 \sectionframe{Towards non linearity}
 
 \begin{frame}{Neural race reduction}
@@ -517,11 +536,32 @@ Information Processing Systems}, 37:106059–106104, 2024.
   \centering
   \includegraphics[height=0.58\textheight]{simplicity_bias_transformers_mlp.png}
 \end{frame}
-\begin{frame}
-Promising directions:
+\begin{frame}{Takeaways}
+  \begin{block}{Key points}
+    \begin{itemize}
+      \item SGD can be modelled via some SDE (with state dependent noise)
+      \item If noise is white at thermal equilibrium the stationary distribution of the SDE is Boltzmann
+      \item Implicit bias of Stochasticity not fully understood (flatness?) but more a 2nd order effect
+      \item Non linearity can be modelled with gated DLN: neural race reduction
+      \item MLP and linear transformers also have saddle to saddle dynamics
+    \end{itemize}
+  \end{block}
+\end{frame}
+\begin{frame}{Promising directions:}
 \begin{itemize}
     \item Polynomial neural networks (quadratic activations)
-    \item Tensor networks
+    \item Related: Tensor and tree tensor networks
 \end{itemize}
+\begin{block}{Big questions}
+\begin{itemize}
+  \item Toy models of deep non linear learning
+  \item Theory that capture natural data
+  \item Making explicit the implicit biases of realistic Architectures
+  \item Interplay between geometry and learning
+  \item A statistical field theory of deep neural networks
+  \item A more realistic theory of feature and hierarchical learning
+\end{itemize}
+\end{block}
+Reference: \href{https://arxiv.org/abs/2604.21691}{\textit{There Will Be a Scientific Theory of Deep Learning, Jamie Simon et al.} }
 \end{frame}
 \end{document}
