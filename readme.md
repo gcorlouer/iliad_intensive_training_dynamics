@@ -1,26 +1,28 @@
 # Lectures and tutorials on implicit regularization and emergence
 
-Start with the implicit regularization presentation and work on the problems in the implicit_regularization folder.
+Start with the learning_dynamics.pdf lecture and work on the problems in the exercises folder. Verify your answers with the solutions.pdf file in the solutions folder.
 
-Then go through the emergence presentation and work on the problems in the emergence folder.
-
-Follow your interest and read some of the papers in the reading list.
+Follow your interest and read some of the papers in the reading list, starting with the key readings.
 
 # Learning goals:
 
-## Implicit regularization
+## Motivation
+* Know about some big open questions in learning dynamics
 * Understand the concept of implicit regularization
+* Know about the different approaches to studying learning dynamics
+* Understand the AI safety motivations for learning dynamics
+* Know about emergent misalignment as a safety-relevant phenomena that illustrates the importance of understanding generalization for AI safety
+
+## Geometry and dynamics of deep neural networks 
 * Know key results about the loss landscape of deep linear networks (DLNs): critical points are saddles or global minima
 * Explain the edge of stability phenomenon
 * Understand that gradient flow can be written as NTK-weighted gradient in function space
 * DLNs are degenerate and have conserved quantities through gradient flow
-* Understand the role of initialization for the lazy and rich regimes in DLNs
+
+## Regimes of learning in deep linear networks
+* Understand the role of initialization, width and depth for the lazy and rich (saddle to saddle) regimes in DLNs
 * Know about implicit regularization from non-linearity (neural race reduction)
 
-## Emergence
-* Know about the concept of emergence: surprising capabilities emerge with more compute
-* Know about empirical examples of emergence such as grokking and emergent misalignment
-* Understand the grokking explanation as controlled by a transition from the lazy to rich regime
 
 # Prerequisites:
 * Calculus
