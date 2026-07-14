@@ -11,6 +11,7 @@
 !*.tex
 !*.pdf
 !*.md
+!*.png
 
 # Private or obsolete notes.
 scratchpad.md
