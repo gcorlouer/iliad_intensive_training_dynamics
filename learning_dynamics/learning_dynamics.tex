@@ -109,7 +109,7 @@ where $W$ is the student matrix.
 \end{frame}
 \begin{frame}{Stochastic gradient descent}
 \small
-Learn a function $g$ from observations $y = g(x)$. Initialize neural weights at $\theta_0 \sim \mathcal{N}(0,\sigma^{-\gamma}I)$, with initialization scale $\gamma$.
+Learn a function $g$ from observations $y = g(x)$. Initialize neural weights at $\theta_0 \sim \mathcal{N}(0,\sigma^{-\gamma}I)$, with initialization scale $\gamma$ and $\sigma=d_L$.
 \begin{block}{SGD update}
     Consider a dataset of size $N$. At each time step, sample a batch $b_k$ of size $B$. The empirical loss is the expectation of the batch loss:
 \[
@@ -406,7 +406,7 @@ arXiv:1810.02281, 2018
 \end{frame}
 \sectionframe{Initialization, Width, and Depth}
 \begin{frame}{Training losses}
-Initialize weights: $\theta \sim \mathcal{N}(0,\sigma^{-\gamma/2}I)$
+Initialize weights: $\theta \sim \mathcal{N}(0,d_L^{-\gamma/2}I)$
 \\
 $\gamma < 1$: large initialization, linear regime (NTK)
 \\
@@ -454,7 +454,7 @@ $\gamma = 1$: intermediate regime
 \end{frame}
 \begin{frame}{Rich regime}
   \small
-  For balanced and aligned weights (or $\gamma > 1$), the singular values of the student satisfy
+  For balanced, and aligned weights, and $\gamma > 1$ (small init.), the singular values of the student satisfy
   \[
     \dot{w}_{\alpha} = 2\left(s_{\alpha} - w_{\alpha}\right)w_{\alpha}.
   \]
@@ -473,7 +473,7 @@ $\gamma = 1$: intermediate regime
   \begin{block}{Key points}
     \begin{itemize}
       \item Depth and specific initialization induce saddle-to-saddle dynamics
-      \item Gradient flow has a simplicity bias toward low-rank approximation
+      \item Gradient flow has a simplicity bias toward learning low hanging fruit directions
       \item Large initialization and large width give the NTK regime: no feature learning, and the NTK is frozen
       \item In the saddle-to-saddle regime, the timescale of learning is set by the target singular values
     \end{itemize}

@@ -295,19 +295,19 @@ features in decreasing order of their singular value strength.
 
 \textbf{(c)} \textbf{Incremental learning.} Consider a teacher with
 \(r\) nonzero singular values and a small uniform initialization
-\(w_\alpha(0) = w_0 \ll s_r\) for all \(\alpha\). Discuss:
+\(w_\alpha(0) = w_0 \ll s_r\) for all \(\alpha\). Qualitatively, discuss:
 
 \begin{itemize}
 \tightlist
 \item
-  What is the approximate rank of \(W(t)\) at early times?
+  What is the approximate distribution of singular values of \(W(t)\) at early times?
 \item
-  How does the rank evolve at intermediate times?
+  How do the singular values of $W(t)$ evolve throughout training?
 \item
   What happens in the limit \(t \to \infty\)?
 \end{itemize}
 
-What does this tell us about the sequence of critical points visited by
+What does this analysis tell us about the sequence of critical points visited by
 the gradient flow?
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
