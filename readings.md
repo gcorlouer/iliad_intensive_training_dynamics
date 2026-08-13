@@ -1,5 +1,5 @@
 # Training dynamics:
-The readings are roughly ordered in a way that makes sense for learning. Discuss the readings in groups of 3 or 4. Spend 30 minutes
+The readings are roughly ordered in a way that makes sense for learning. Discuss the readings in groups of 3 or 4. Spend 30 minutes reading, 30 minutes discussing and 30 minutes to write your thoughts on this [google doc](https://docs.google.com/document/d/13u-zhLUnAT9Wzn2IUsbNUOt9vNE5u8QV8GV1NAr1gow/edit?tab=t.0).
 # Key readings:
 - The strong default suggestion for everyone is: Saxe et al. [A mathematical theory of semantic development in deep neural networks](https://www.pnas.org/doi/10.1073/pnas.1820226116)
      - Read the supplementary materials section to understand the exact solution of gradient flow dynamics in deep linear networks
