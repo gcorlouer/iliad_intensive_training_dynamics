@@ -1,27 +1,21 @@
 # Training dynamics:
-The readings are roughly ordered in a way that makes sense for learning. This is a curated list of what I find important, and it is not exhaustive.
+The readings are roughly ordered in a way that makes sense for learning. Discuss the readings in groups of 3 or 4. Spend 30 minutes
 # Key readings:
-- [The loss landscape of deep linear neural networks: a second-order analysis](https://arxiv.org/abs/2107.13289) Achour et al.
-  - First-order and second-order classification of critical points in DLN loss landscapes. Classifies strict and non-strict saddles.
--  Saxe et al. [A mathematical theory of semantic development in deep neural networks](https://www.pnas.org/doi/10.1073/pnas.1820226116)
+- The strong default suggestion for everyone is: Saxe et al. [A mathematical theory of semantic development in deep neural networks](https://www.pnas.org/doi/10.1073/pnas.1820226116)
      - Read the supplementary materials section to understand the exact solution of gradient flow dynamics in deep linear networks
-- [Geometry of fibers of the multiplication map of deep linear neural networks
+- For people with a strong algebraic geometry and representation geometry background read: [Geometry of fibers of the multiplication map of deep linear neural networks
 ](https://arxiv.org/abs/2411.19920) Simon Pepin Lehalleur et al.
   - Stratifies global minima into orbits using quiver representation theory
-- [The geometry of the deep linear network
+- For people with a strong dynamical system and differential geometry background read: [The geometry of the deep linear network
 ](https://arxiv.org/abs/2411.09004) Govind Menon
   - Beautiful mathematical treatment of gradient flow in DLNs and a surprising mathematical result relating gradient flow and free-energy minimization. Makes implicit regularization explicit (under balanced assumptions)
-- [Emergent Misalignment is Easy, Narrow Misalignment is Hard
+- For people who are much more empirically minded:[Emergent Misalignment is Easy, Narrow Misalignment is Hard
 ](https://arxiv.org/abs/2602.07852)
   - When fine-tuned on data with harmful inputs, the model generalize in harmful ways on other unrelated datasets.
-- [Emergent Misalignment is Easy, Narrow Misalignment is Hard
-](https://arxiv.org/abs/2602.07852)
   - By regularizing, we can mitigate emergent misalignment
 - Literature Review: [There Will Be a Scientific Theory of Deep Learning](https://arxiv.org/abs/2604.21691)
-- [Self-Stabilization: The Implicit Bias of Gradient Descent at the Edge of Stability
-](https://arxiv.org/abs/2209.15594)
-- [Beyond Implicit Bias: The Insignificance of SGD Noise in Online Learning
-](https://arxiv.org/abs/2306.08590)
+- To go further: [Alternating Gradient Flows: A Theory of
+Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 ## Loss landscape geometry
 - [Deep Learning without Poor Local Minima
 ](https://arxiv.org/abs/1605.07110), Kenji Kawaguchi
