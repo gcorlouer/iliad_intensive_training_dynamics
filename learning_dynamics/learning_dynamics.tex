@@ -41,10 +41,10 @@
 \end{frame}
 \begin{frame}{How: making mathematical models of learning}
     \begin{itemize}
-        \item Tractable toy models: deep linear networks, shallow nonlinear networks, polynomial activations
+        \item Tractable toy models: deep linear networks, shallow nonlinear networks, tensor networks, polynomial activations
         \item Take limits in depth, width, data, and training time
         \item Exploit symmetries: quotient them out and find conserved quantities
-        \item Identify useful coarse-grained variables: singular values of weights, learning coefficients, correlation functions
+        \item Identify useful observables: singular values of weights, learning coefficient, correlation functions
         \item Work in specific regimes: lazy versus rich
         \item Validate with tight feedback loops: experiments, symbolic derivations, and mathematical proofs
     \end{itemize}
@@ -76,9 +76,9 @@ h_\ell(\theta,x)
 &\hspace{1.5em}\ell=1,\ldots,L-1.
 \end{aligned}
 \]
-A neural network is a function $f_\theta$ such that
+A deep neural network is a function $f_\theta$ such that
 \[
-f_\theta(x) = W_Lh_{L-1}(\theta,x)+b_L.
+f_\theta(x) = W_Lh_{L-1}(\theta,x)
 \]
 Other architectural components include residual streams, tokenization, embeddings, attention for sequence modeling, and layer normalization.
 \end{column}
@@ -90,7 +90,7 @@ Other architectural components include residual streams, tokenization, embedding
 \end{columns}
 \end{frame}
 \begin{frame}{Deep linear network}
-The function is linear in the data and nonlinear in the parameters:
+The function is linear in the data and multi-linear (nonlinear) in the parameters:
   \[
     \begin{aligned}
       f\colon \mathbb{R}^{d_0} \times
@@ -109,7 +109,7 @@ where $W$ is the student matrix.
 \end{frame}
 \begin{frame}{Stochastic gradient descent}
 \small
-Learn a function $g$ from observations $y = g(x)$. Initialize neural weights at $\theta_0 \sim \mathcal{N}(0,\sigma^{-\gamma}I)$, with initialization scale $\gamma$ and $\sigma=d_L$.
+Learn a function $g$ from observations $y = g(x)$. Initialize neural weights at $\theta_0 \sim \mathcal{N}(0,\sigma I)$, with initialization scale $\gamma$ and $\sigma=d_L^{-\gamma}$.
 \begin{block}{SGD update}
     Consider a dataset of size $N$. At each time step, sample a batch $b_k$ of size $B$. The empirical loss is the expectation of the batch loss:
 \[
@@ -142,7 +142,7 @@ The input-output covariance is $\Sigma_{YX}=\mathbb{E}[yx^{\top}]=M$.
 \begin{equation*}
     \mathcal{L}(\theta) := \frac{1}{2} \lVert M - W_L\cdots W_1\rVert^2_F = \frac{1}{2} \lVert M - W\rVert^2_F
 \end{equation*}
-Initialize $\theta_0 \sim \mathcal{N}(0,\sigma^{-\gamma}I)$, where $\gamma$ controls the initialization scale. The gradient flow is
+Initialize $\theta_0 \sim \mathcal{N}(0,d_L^{-\gamma}I)$, where $\gamma$ controls the initialization scale. The gradient flow is
 \[
 \dot{W}_\ell = - \nabla_{W_{\ell}} \mathcal{L}(\theta).
 \]
@@ -280,7 +280,7 @@ and Statistics}, pages 192–204. PMLR, 2015.
   \[
     K_{\theta}(x,x')
     =
-    \nabla_{\theta} f_{\theta}(x)\,
+    \nabla_{\theta} f_{\theta}(x)\, \cdot
     \nabla_{\theta} f_{\theta}(x')^{\top}
     =
     \sum_{i=1}^p
@@ -299,7 +299,7 @@ and Statistics}, pages 192–204. PMLR, 2015.
 \begin{frame}{Conserved quantities in DLNs}
   Conserved quantities under gradient flow:
   \[
-    G_\ell :=
+    \beta_\ell :=
     W_{\ell+1}^{\top}W_{\ell+1}
     -
     W_{\ell}W_{\ell}^{\top},
@@ -307,7 +307,7 @@ and Statistics}, pages 192–204. PMLR, 2015.
     \ell=1,\ldots,L-1.
   \]
 
-  Along the flow, $G_\ell=\beta_\ell$ is constant. When $\beta_\ell=0$, we have \textbf{balanced weights}.
+  Along the flow, $\beta_\ell$ is constant. When $\beta_\ell=0$, we have \textbf{balanced weights}.
 
   \vspace{0.4cm}
 
@@ -425,7 +425,7 @@ $\gamma = 1$: intermediate regime
         \centering
         \includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{figures/DLN_sv_students.png}
     \end{figure}
-\end{frame}
+ \end{frame}
 
 \begin{frame}{Singular values of individual weight matrices}
     \begin{figure}
@@ -576,7 +576,7 @@ Information Processing Systems}, 37:106059–106104, 2024.
 \end{frame}
 \sectionframe{Towards nonlinearity}
 
-\begin{frame}{Neural race reduction}
+\begin{frame}{Neural race reduction in gated DLNs}
   \centering
   \includegraphics[height=0.68\textheight]{neural_race.png}
 
@@ -593,6 +593,22 @@ Information Processing Systems}, 37:106059–106104, 2024.
   \centering
   \includegraphics[height=0.58\textheight]{simplicity_bias_transformers_mlp.png}
 \end{frame}
+\begin{frame}{Alternating Gradient Flows} 
+  \small
+  \emph{Alternating Gradient Flows: A Theory of
+Feature Learning in Two-layer Neural Networks}
+  \vspace{0.2cm}
+  \centering
+  \includegraphics[height=0.58\textheight]{AF_architectures.png}
+\end{frame}
+\begin{frame}
+  \small
+  \emph{Alternating Gradient Flows: A Theory of
+Feature Learning in Two-layer Neural Networks}
+  \vspace{0.2cm}
+  \centering
+  \includegraphics[height=0.58\textheight]{AF_conceptual.png}
+\end{frame}
 \begin{frame}{Takeaways}
   \begin{block}{Key points}
     \begin{itemize}
@@ -601,6 +617,7 @@ Information Processing Systems}, 37:106059–106104, 2024.
       \item The implicit bias of stochasticity is not fully understood (flatness?), but it is more of a second-order effect
       \item Nonlinearity can be modeled with gated DLNs: neural race reduction
       \item MLPs and linear transformers also have saddle-to-saddle dynamics
+      \item Alternating gradient flow: towards a general theory of the rich regime
     \end{itemize}
   \end{block}
 \end{frame}
@@ -614,9 +631,8 @@ Information Processing Systems}, 37:106059–106104, 2024.
   \item Toy models of deep nonlinear learning
   \item Theory that captures natural data
   \item Making explicit the implicit biases of realistic architectures
-  \item Interplay between geometry and learning
+  \item Mixing rich and lazy regimes
   \item A statistical field theory of deep neural networks
-  \item A more realistic theory of feature and hierarchical learning
 \end{itemize}
 \end{block}
 Reference: \href{https://arxiv.org/abs/2604.21691}{\textit{There Will Be a Scientific Theory of Deep Learning, Jamie Simon et al.} }
