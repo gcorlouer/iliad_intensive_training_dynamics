@@ -86,7 +86,7 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/abs/2506.06489)
 ## Learning rate (discrete GD)
 - [Self-Stabilization: The Implicit Bias of Gradient Descent at the Edge of Stability
 ](https://arxiv.org/abs/2209.15594)
-  - Shows that curvature stabilizes around the inverse of the learning rate.
+  - Shows that curvature stabilizes around twice the inverse of the learning rate (2/eta).
 - [Understanding Optimization in Deep Learning with Central Flows
 ](https://arxiv.org/abs/2410.24206)
   - GD with a discrete learning rate is equivalent to gradient flow on an effective loss
