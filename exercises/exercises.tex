@@ -335,14 +335,14 @@ the early phase of training, while \(w\) has not changed much from
 
 \[\dot{w} \approx 2w_0(s - w)\]
 
-\textbf{(b)} \textbf{Frozen-NTK solution.} Solve the linearized ODE from
-(a). Show that:
+\textbf{(a)} \textbf{Frozen-NTK solution.} Solve the linearized ODE
+above. Show that:
 
 \[w(t) = s + (w_0 - s)\,e^{-2w_0 t}\]
 
 What is the learning timescale?
 
-\textbf{(c)} \textbf{No timescale separation.} Now restore the mode
+\textbf{(b)} \textbf{No timescale separation.} Now restore the mode
 index \(\alpha\). In the lazy regime, each mode satisfies
 \(\dot{w}_\alpha \approx 2w_0(s_\alpha - w_\alpha)\) with the
 \textbf{same} rate \(2w_0\) for all \(\alpha\). Compare the lazy

@@ -399,7 +399,8 @@ min)}\label{problem-4-lazy-regime-15-min}
 
 \subsubsection{Solution 4}\label{solution-4}
 
-\textbf{(a)} Starting from the same ODE \(\dot{w} = 2w(s - w)\), with
+\textbf{The linearization.} Starting from the same ODE
+\(\dot{w} = 2w(s - w)\), with
 \(w_0 \gg s > 0\), the weight \(w\) needs to decrease from \(w_0\) to
 \(s\). As long as \(w\) has not changed much from \(w_0\), we can write
 \(w = w_0 + \delta w\) with \(|\delta w| \ll w_0\), so:
@@ -415,7 +416,7 @@ at its initial value \(2w_0\). Note that only the NTK prefactor is
 linearized; the residual \((s - w)\) is kept exact since it drives
 learning.
 
-\textbf{(b)} The linearized ODE \(\dot{w} = 2w_0(s - w)\) is first-order
+\textbf{(a)} The linearized ODE \(\dot{w} = 2w_0(s - w)\) is first-order
 linear. Set \(\tilde{w} := w - s\), then
 \(\dot{\tilde{w}} = -2w_0\,\tilde{w}\), with solution
 \(\tilde{w}(t) = (w_0 - s)\,e^{-2w_0 t}\). Therefore:
@@ -445,7 +446,7 @@ contrast, the NTK changes from \(2w_0 \approx 0\) to \(2s\) --- a change
 of order \(s/w_0 \to \infty\) relative to the initial value --- making
 the linearization completely invalid. \(\square\)
 
-\textbf{(c)} Restoring the mode index, each mode satisfies
+\textbf{(b)} Restoring the mode index, each mode satisfies
 \(\dot{w}_\alpha \approx 2w_0(s_\alpha - w_\alpha)\) with solution:
 
 \[w_\alpha(t) = s_\alpha + (w_0 - s_\alpha)\,e^{-2w_0 t}\]
