@@ -9,7 +9,7 @@ The readings are roughly ordered in a way that makes sense for learning. Discuss
 - For people with a strong dynamical system and differential geometry background read: [The geometry of the deep linear network
 ](https://arxiv.org/abs/2411.09004) Govind Menon
   - Beautiful mathematical treatment of gradient flow in DLNs and a surprising mathematical result relating gradient flow and free-energy minimization. Makes implicit regularization explicit (under balanced assumptions)
-- For people who are much more empirically minded:[Emergent Misalignment is Easy, Narrow Misalignment is Hard
+- For people who are much more empirically minded: [Emergent Misalignment is Easy, Narrow Misalignment is Hard
 ](https://arxiv.org/abs/2602.07852)
   - When fine-tuned on data with harmful inputs, the model generalize in harmful ways on other unrelated datasets.
   - By regularizing, we can mitigate emergent misalignment
@@ -40,7 +40,7 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
   - Original result that linear network landscapes have no spurious local minima (single hidden layer case)
 - Good review of key DLNs results: [Gradient Flow Equations for Deep Linear Neural Networks: A Survey from a Network Perspective
 ](https://arxiv.org/abs/2511.10362), Joel Wendin, Claudio Altafini
-  - Also covers gradient flow  
+  - Also covers gradient flow
 ## Implicit biases of gradient flow
 - Saxe et al. [A mathematical theory of semantic development in deep neural networks](https://www.pnas.org/doi/10.1073/pnas.1820226116)
   - Read the supplementary materials section to understand the exact solution of gradient flow dynamics in deep linear networks
@@ -60,7 +60,7 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 ](https://arxiv.org/abs/2302.11055)
   - SGD builds up complex solutions by first learning simpler solutions and then composing them
 - [Mixed Dynamics In Linear Networks: Unifying the Lazy and Active Regimes
-](https://arxiv.org/abs/2405.17580) 
+](https://arxiv.org/abs/2405.17580)
   - Unifies lazy and rich in 2-layer DLNs and gives conditions for the transition between them
 - [Neural Tangent Kernel: Convergence and Generalization in Neural Networks
 ](https://arxiv.org/abs/1806.07572) Arthur Jacot, Franck Gabriel, Clément Hongler
@@ -78,10 +78,10 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
   - Gradient descent on matrix factorization converges to the minimum nuclear norm
 - [Gradient Descent Maximizes the Margin of Homogeneous Neural Networks
 ](https://arxiv.org/abs/1906.05890)
-  - Implicit bias toward max-margin in classification      
+  - Implicit bias toward max-margin in classification
 - [A Convergence Analysis of Gradient Descent for Deep Linear Neural Networks
 ](https://arxiv.org/abs/1810.02281) Sanjeev Arora et al.
-  - Convergence analysis of SGD 
+  - Convergence analysis of SGD
 
 ## Learning rate (discrete GD)
 - [Self-Stabilization: The Implicit Bias of Gradient Descent at the Edge of Stability
@@ -136,7 +136,7 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 - [The Heavy-Tail Phenomenon in SGD
 ](https://arxiv.org/abs/2006.04740)
     - SGD noise can be heavy-tailed, and this induces a different regularization
-  
+
 ## Emergence: empirical examples
 - [Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets
 ](https://arxiv.org/abs/2201.02177)
