@@ -11,7 +11,7 @@ Follow your interest and read some of the papers in the reading list, starting w
 * Understand the concept of implicit regularization
 * Know about the different approaches to studying learning dynamics
 * Understand the AI safety motivations for learning dynamics
-* Know about emergent misalignment as a safety-relevant phenomena that illustrates the importance of understanding generalization for AI safety
+* Know about emergent misalignment as a safety-relevant phenomenon that illustrates the importance of understanding generalization for AI safety
 
 ## Geometry and dynamics of deep neural networks 
 * Know key results about the loss landscape of deep linear networks (DLNs): critical points are saddles or global minima

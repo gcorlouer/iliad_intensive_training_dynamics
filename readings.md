@@ -11,11 +11,11 @@ The readings are roughly ordered in a way that makes sense for learning. Discuss
   - Beautiful mathematical treatment of gradient flow in DLNs and a surprising mathematical result relating gradient flow and free-energy minimization. Makes implicit regularization explicit (under balanced assumptions)
 - For people who are much more empirically minded: [Emergent Misalignment is Easy, Narrow Misalignment is Hard
 ](https://arxiv.org/abs/2602.07852)
-  - When fine-tuned on data with harmful inputs, the model generalize in harmful ways on other unrelated datasets.
+  - When fine-tuned on data with harmful inputs, the model generalizes in harmful ways on other unrelated datasets.
   - By regularizing, we can mitigate emergent misalignment
 - Literature Review: [There Will Be a Scientific Theory of Deep Learning](https://arxiv.org/abs/2604.21691)
 - To go further: [Alternating Gradient Flows: A Theory of
-Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
+Feature Learning in Two-layer Neural Networks](https://arxiv.org/abs/2506.06489)
 ## Loss landscape geometry
 - [Deep Learning without Poor Local Minima
 ](https://arxiv.org/abs/1605.07110), Kenji Kawaguchi
@@ -177,5 +177,4 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 - [Statistical Field Theory for Neural Networks, Moritz Helias, David Dahmen
 ](https://link.springer.com/book/10.1007/978-3-030-46444-8)
 - [Lecture notes: From Gaussian processes to feature learning, Moritz Helias et al
-](https://arxiv.org/abs/2602.12855
-)
+](https://arxiv.org/abs/2602.12855)
