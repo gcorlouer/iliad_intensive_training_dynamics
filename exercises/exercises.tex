@@ -205,8 +205,7 @@ gradient flow equations from (a). Show that:
 \[\dot{W} = (M - W)\, W_1^\top W_1 + W_2 W_2^\top\, (M - W)\]
 
 \textbf{(c.ii)} We now need to express \(W_1^\top W_1\) and
-\(W_2 W_2^\top\) in terms of \(W = W_2 W_1\). For simplicity, assume
-that the weight matrices \(W_l\) are diagonal. Show that:
+\(W_2 W_2^\top\) in terms of \(W = W_2 W_1\). Show that:
 
 \[W_1^\top W_1 = (W^\top W)^{1/2}\]
 
@@ -226,7 +225,7 @@ Show that the gradient flow from (c) can be written as
 \(\dot{W} = K[M - W]\).
 
 It turns out that this result generalizes to depth \(L\) on the balanced
-manifold and to non-diagonal weight matrices:
+manifold:
 
 \[\dot{W} = \sum_{k=1}^{L} (WW^\top)^{\frac{L-k}{L}} (M - W) (W^\top W)^{\frac{k-1}{L}}\]
 This is the NTK equation in the case of DLNs. The NTK equation is a gradient flow in function space with NTK being a preconditioning operator for the gradient.
