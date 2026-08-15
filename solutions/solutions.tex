@@ -149,7 +149,11 @@ minima} --- every local minimum is global. \(\square\)
 All \(g_l\) and \(g_l^{-1}\) factors cancel telescopically. This means
 every parameter point in the orbit
 \(\mathcal{O}_\theta = GL_h \cdot \theta\) maps to the same student
-\(W\). The global minima form the fiber \(\mu^{-1}(M)\), which contains
+\(W\). \(\square\)
+
+For the dimension of the set of global minima,
+this invariance means the following. The global minima form the fiber
+\(\mu^{-1}(M)\), which contains
 the entire orbit \(GL_h \cdot \theta^*\) for any global minimizer
 \(\theta^*\). The orbit has dimension \(\sum_{l=1}^{L-1} d_l^2\) (the
 dimension of \(GL_h\)), so the set of global minima is a
@@ -365,14 +369,19 @@ timescales \(t_1 \ll t_2 \ll \cdots \ll t_r\). \(\square\)
 then transitions rapidly to \(w_\alpha \approx s_\alpha\).
 
 \textbf{Early times} (\(t \sim \frac{1}{2s_1}\ln(s_1/w_0)\)): Only mode
-1 has grown significantly. The student is approximately
-\(W(t) \approx w_1(t)\,u_1 v_1^\top\), which is \textbf{rank 1}.
+1 has grown significantly, so the spectrum is \textbf{one singular value
+near \(s_1\), with all the others still near \(w_0 \ll s_r\)}. The
+student is approximately \(W(t) \approx w_1(t)\,u_1 v_1^\top\),
+effectively \textbf{rank 1}.
 
 \textbf{Intermediate times}: As \(t\) increases, \(w_2\) switches on,
-then \(w_3\), etc. The student is approximately
+then \(w_3\), etc. The singular values \textbf{switch on one at a time},
+in decreasing order of \(s_\alpha\), each staying near \(w_0\) and then
+rising to \(s_\alpha\) over a narrow window. The student is
+approximately
 \(W(t) \approx \sum_{\alpha=1}^{k(t)} w_\alpha(t)\,u_\alpha v_\alpha^\top\)
-where \(k(t)\) increases stepwise. The \textbf{rank increases
-incrementally}.
+where \(k(t)\) increases stepwise, so the effective \textbf{rank
+increases incrementally}.
 
 \textbf{Long times} (\(t \to \infty\)): All modes converge,
 \(w_\alpha \to s_\alpha\), and \(W \to M\).
