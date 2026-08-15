@@ -411,8 +411,7 @@ in the rich regime and others still in the lazy regime.
 \subsection{Problem 6 (Bonus) --- Stochastic Implicit Bias (10
 min)}\label{problem-6-bonus-stochastic-implicit-bias-10-min}
 
-SGD introduces noise from mini-batching. Write the SGD update as a combination of gradient and noise term (use a LLM to check your answer). A continuous model is the
-Langevin SDE:
+SGD introduces noise from mini-batching. A continuous model is the Langevin SDE:
 
 \[d\theta_t = -\nabla \mathcal{L}(\theta_t)\,dt + \sqrt{\eta\,\Sigma(\theta_t)}\,dB_t\]
 
