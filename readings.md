@@ -65,6 +65,9 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 - [Neural Tangent Kernel: Convergence and Generalization in Neural Networks
 ](https://arxiv.org/abs/1806.07572) Arthur Jacot, Franck Gabriel, Clément Hongler
   - NTK paper that describes gradient flow in function space
+- [On Lazy Training in Differentiable Programming
+](https://arxiv.org/abs/1812.07956) Lénaïc Chizat, Edouard Oyallon, Francis Bach
+  - Lazy training can occur in various settings, and is caused by scaling choices
 - [The Neural Race Reduction: Dynamics of Abstraction in Gated Networks
 ](https://arxiv.org/abs/2207.10430) Saxe et al.
   - Implicit biases toward shared representation in non-linear networks as modelled by gated DLNs
@@ -74,6 +77,9 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 - [From Lazy to Rich: Exact Learning Dynamics in Deep Linear Networks
 ](https://arxiv.org/abs/2409.14623)
     - Studies the transition between lazy and rich regimes in DLNs with balancedness parameters
+- [Get rich quick: exact solutions reveal how unbalanced initializations promote rapid feature learning
+](https://arxiv.org/abs/2406.06158) Daniel Kunin et al.
+  - (Lack of) balance between layers at initialization is preserved under GF, and influences rich vs lazy and implicit bias
 - [Implicit Regularization in Matrix Factorization](https://arxiv.org/abs/1705.09280)
   - Gradient descent on matrix factorization converges to the minimum nuclear norm
 - [Gradient Descent Maximizes the Margin of Homogeneous Neural Networks
