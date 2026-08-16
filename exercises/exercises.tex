@@ -87,10 +87,9 @@ where \(W = W_L \cdots W_1 \in \mathbb{R}^{d_L \times d_0}\) is the
 end-to-end (or ``student'') matrix. We train on a dataset
 \(\{(x_\mu, y_\mu)\}_{\mu=1}^N\) with the squared loss:
 
-\[\mathcal{L}(\theta) = \frac{1}{2N} \sum_{\mu=1}^{N} \|y_\mu - W_L \cdots W_1 \, x_\mu\|^2\]
+\[\mathcal{L}(\theta) = \frac{1}{2N} \sum_{\mu=1}^{N} \|y_\mu - f(x_\mu)\|^2\]
 
-In the population limit with whitened inputs \(\Sigma_X = I\), this
-becomes:
+In the population limit \(N \to \infty\) with whitened inputs \(\Sigma_X = I\), this becomes, up to an additive constant\footnote{The constant is \(\frac{1}{2}\mathbb{E}\|y - Mx\|^2\), which is the residual of the OLS. It vanishes on realizable data.}:
 
 \[\mathcal{L}(W) = \frac{1}{2}\|M - W\|_F^2\]
 
@@ -98,6 +97,29 @@ where \(M = \Sigma_{YX} \Sigma_X^{-1} = \Sigma_{YX}\) is the ``teacher'' matrix 
 OLS solution) with SVD
 \(M = U \,\text{diag}(s_1, \ldots, s_r, 0, \ldots, 0)\, V^\top\), and
 \(s_1 \geq s_2 \geq \cdots \geq s_r > 0\).
+
+% ---------------------------------------------------------------------------
+% %%% Where the additive constant comes from.
+%
+% In the population limit the loss is \frac{1}{2}\mathbb{E}\|y - Wx\|^2, with
+% second moments \Sigma_X = \mathbb{E}[x x^\top] and
+% \Sigma_{YX} = \mathbb{E}[y x^\top].
+%
+% Split the residual into
+%
+%     y - Wx = (y - Mx) + (M - W)x.
+%
+% Note \mathbb{E}[(y - Mx)x^\top] = \Sigma_{YX} - M\Sigma_X = 0.
+% The cross term obtained from expanding the square in the loss
+% is \text{Tr}[(M - W)\,\mathbb{E}[x(y - Mx)^\top]] and so
+% vanishes, leaving
+%
+%     \mathcal{L}(W) = \frac{1}{2}\mathbb{E}\|(M - W)x\|^2 + \mathcal{L}_\star,
+%     \qquad \mathcal{L}_\star := \frac{1}{2}\mathbb{E}\|y - Mx\|^2.
+%
+% Whitened inputs, \Sigma_X = I, then reduce the first term to the Frobenius
+% norm, giving \mathcal{L}(W) = \frac{1}{2}\|M - W\|_F^2 + \mathcal{L}_\star.
+% ---------------------------------------------------------------------------
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
