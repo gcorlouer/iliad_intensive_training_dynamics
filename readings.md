@@ -1,5 +1,5 @@
 # Training dynamics:
-The readings are roughly ordered in a way that makes sense for learning. Discuss the readings in groups of 3 or 4. Spend 30 minutes reading, 30 minutes discussing and 30 minutes to write your thoughts on this [google doc](https://docs.google.com/document/d/13u-zhLUnAT9Wzn2IUsbNUOt9vNE5u8QV8GV1NAr1gow/edit?tab=t.0).
+The readings are roughly ordered in a way that makes sense for learning. Discuss the readings in groups of 2 or 3, to be formed in this [Google doc](https://docs.google.com/document/d/13u-zhLUnAT9Wzn2IUsbNUOt9vNE5u8QV8GV1NAr1gow/edit?tab=t.0). Spend 30 minutes reading, 30 minutes discussing and 30 minutes to write down your thoughts in the Google doc.
 # Key readings:
 - The strong default suggestion for everyone is: Saxe et al. [A mathematical theory of semantic development in deep neural networks](https://www.pnas.org/doi/10.1073/pnas.1820226116)
      - Read the supplementary materials section to understand the exact solution of gradient flow dynamics in deep linear networks
@@ -65,6 +65,9 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 - [Neural Tangent Kernel: Convergence and Generalization in Neural Networks
 ](https://arxiv.org/abs/1806.07572) Arthur Jacot, Franck Gabriel, Clément Hongler
   - NTK paper that describes gradient flow in function space
+- [On Lazy Training in Differentiable Programming
+](https://arxiv.org/abs/1812.07956) Lénaïc Chizat, Edouard Oyallon, Francis Bach
+  - Lazy training can occur in various settings, and is caused by scaling choices
 - [The Neural Race Reduction: Dynamics of Abstraction in Gated Networks
 ](https://arxiv.org/abs/2207.10430) Saxe et al.
   - Implicit biases toward shared representation in non-linear networks as modelled by gated DLNs
@@ -74,6 +77,9 @@ Feature Learning in Two-layer Neural Networks](https://arxiv.org/pdf/2506.06489)
 - [From Lazy to Rich: Exact Learning Dynamics in Deep Linear Networks
 ](https://arxiv.org/abs/2409.14623)
     - Studies the transition between lazy and rich regimes in DLNs with balancedness parameters
+- [Get rich quick: exact solutions reveal how unbalanced initializations promote rapid feature learning
+](https://arxiv.org/abs/2406.06158) Daniel Kunin et al.
+  - (Lack of) balance between layers at initialization is preserved under GF, and influences rich vs lazy and implicit bias
 - [Implicit Regularization in Matrix Factorization](https://arxiv.org/abs/1705.09280)
   - Gradient descent on matrix factorization converges to the minimum nuclear norm
 - [Gradient Descent Maximizes the Margin of Homogeneous Neural Networks
