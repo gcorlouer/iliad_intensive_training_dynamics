@@ -59,7 +59,7 @@
     \end{itemize}
 \end{frame}
 \begin{frame}{Emergent misalignment}
-  Jan Betley et al., "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs" (Figure 1)
+  Jan Betley et al., ``Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs'' (Figure 1)
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figures/emergent_misalignment.png}
 \end{frame}
 \sectionframe{Setup}
@@ -125,7 +125,7 @@ Learn a function $g$ from observations $y = g(x)$. Initialize neural weights at 
 \theta_k-\eta\nabla_\theta\mathcal{L}(\theta_k)
 +\eta\,\xi(\theta_k,b_k).
 \end{aligned}
-\] 
+\]
 with gradient noise
 \[
 \xi(\theta,b):=
@@ -165,7 +165,7 @@ Assume that $\Sigma_X$ and $\Sigma_{YX}$ are full rank, and that $\Sigma_{YX}$ h
 \end{block}
 The training dynamics cannot get stuck in spurious local minima.
 \\
-Reference: \textit{Kawaguchi, Kenji. "Deep learning without poor local minima." Advances in neural information processing systems 29 (2016)}
+Reference: \textit{Kawaguchi, Kenji. ``Deep learning without poor local minima.'' Advances in neural information processing systems 29 (2016)}
 \end{frame}
 \begin{frame}{Parametrization of critical points}
 Teacher SVD: \(M=\sum_{i=1}^{r_m}s_i u_i v_i^{\top}\).
@@ -179,7 +179,7 @@ Teacher SVD: \(M=\sum_{i=1}^{r_m}s_i u_i v_i^{\top}\).
 \end{block}
 The saddle points are given by a subset of singular values and (left) singular vectors of the teacher $M$.
 \\
-Reference: \textit{Achour, El Mehdi, François Malgouyres, and Sébastien Gerchinovitz. "The loss landscape of deep linear neural networks: a second-order analysis." Journal of Machine Learning Research 25.242 (2024): 1-76.}
+Reference: \textit{Achour, El Mehdi, François Malgouyres, and Sébastien Gerchinovitz. ``The loss landscape of deep linear neural networks: a second-order analysis.'' Journal of Machine Learning Research 25.242 (2024): 1-76.}
 \end{frame}
 \begin{frame}{Symmetries}
 \small
@@ -229,7 +229,7 @@ For a teacher matrix $M$ of rank $r_m$, we have:
     \operatorname{codim}\bigl(\mu^{-1}(M)\bigr)
     &=
     \operatorname{codim}\bigl(\Sigma_{\mathbf{d}}^{r_m}\bigr)
-    + r_m(d_0 - d_L - r_m) \\
+    + r_m(d_0 + d_L - r_m) \\
     &= 2\,\operatorname{RLCT}_{0}(\mathcal{L}).
     \end{aligned}
     \]
@@ -240,7 +240,7 @@ In general, we only have:
 \frac{1}{2}\operatorname{codim}_{\operatorname{Rep}_{\mathbf{d}}}\bigl(\mathcal{L}^{-1}(0)\bigr).
 \]
 \end{block}
-Ref: \textit{Lehalleur, Simon Pepin, and Richárd Rimányi. "Geometry of fibers of the multiplication map of deep linear neural networks." arXiv preprint arXiv:2411.19920 (2024).}
+Ref: \textit{Lehalleur, Simon Pepin, and Richárd Rimányi. ``Geometry of fibers of the multiplication map of deep linear neural networks.'' arXiv preprint arXiv:2411.19920 (2024).}
 \end{frame}
 \begin{frame}{Discussion}
 \begin{block}{Takeaways}
@@ -365,7 +365,7 @@ For depth $L=2$:
 \end{frame}
 \begin{frame}{Learning rate: Edge of stability}
 Descent lemma: for an $L_{\mathrm{smooth}}$-smooth convex loss, the loss decreases if $0<\eta<2/L_{\mathrm{smooth}}$.
-\\ 
+\\
 The loss is nonconvex, but the Hessian oscillates near and slightly above $\frac{2}{\eta}$; this regularizes away sharp minima.
 
   \centering
@@ -406,7 +406,7 @@ arXiv:1810.02281, 2018
 \end{frame}
 \sectionframe{Initialization, Width, and Depth}
 \begin{frame}{Training losses}
-Initialize weights: $\theta \sim \mathcal{N}(0,d_L^{-\gamma/2}I)$
+Initialize weights: $\theta \sim \mathcal{N}(0,d_L^{-\gamma}I)$
 \\
 $\gamma < 1$: large initialization, linear regime (NTK)
 \\
@@ -425,7 +425,7 @@ $\gamma = 1$: intermediate regime
         \centering
         \includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{figures/DLN_sv_students.png}
     \end{figure}
- \end{frame}
+\end{frame}
 
 \begin{frame}{Singular values of individual weight matrices}
     \begin{figure}
@@ -447,7 +447,7 @@ $\gamma = 1$: intermediate regime
 
   The timescale of learning is fixed by the NTK at initialization:
   \[
-    t \approx -k_0^{-1}\log\left(\frac{s - w_f}{s - w_0}\right)
+    t \approx -K_0^{-1}\log\left(\frac{s - w_f}{s - w_0}\right)
   \]
 
   This behaves like a shallow linear network.
@@ -593,7 +593,7 @@ Information Processing Systems}, 37:106059–106104, 2024.
   \centering
   \includegraphics[height=0.58\textheight]{simplicity_bias_transformers_mlp.png}
 \end{frame}
-\begin{frame}{Alternating Gradient Flows} 
+\begin{frame}{Alternating Gradient Flows}
   \small
   \emph{Alternating Gradient Flows: A Theory of
 Feature Learning in Two-layer Neural Networks}

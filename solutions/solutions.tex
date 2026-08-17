@@ -149,7 +149,11 @@ minima} --- every local minimum is global. \(\square\)
 All \(g_l\) and \(g_l^{-1}\) factors cancel telescopically. This means
 every parameter point in the orbit
 \(\mathcal{O}_\theta = GL_h \cdot \theta\) maps to the same student
-\(W\). The global minima form the fiber \(\mu^{-1}(M)\), which contains
+\(W\). \(\square\)
+
+For the dimension of the set of global minima,
+this invariance means the following. The global minima form the fiber
+\(\mu^{-1}(M)\), which contains
 the entire orbit \(GL_h \cdot \theta^*\) for any global minimizer
 \(\theta^*\). The orbit has dimension \(\sum_{l=1}^{L-1} d_l^2\) (the
 dimension of \(GL_h\)), so the set of global minima is a
@@ -244,7 +248,7 @@ conditions \(W_{l+1}^\top W_{l+1} = W_l W_l^\top\) for all \(l\).
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\subsection{Problem 3 --- Rich Regime: Incremental Learning (25
+\subsection{Problem 3 --- Rich Regime: saddle-to-saddle (25
 min)}\label{problem-3-rich-regime-incremental-learning-25-min}
 
 \subsubsection{Solution 3}\label{solution-3}
@@ -350,14 +354,19 @@ timescales \(t_1 \ll t_2 \ll \cdots \ll t_r\). \(\square\)
 then transitions rapidly to \(w_\alpha \approx s_\alpha\).
 
 \textbf{Early times} (\(t \sim \frac{1}{2s_1}\ln(s_1/w_0)\)): Only mode
-1 has grown significantly. The student is approximately
-\(W(t) \approx w_1(t)\,u_1 v_1^\top\), which is \textbf{rank 1}.
+1 has grown significantly, so the spectrum is \textbf{one singular value
+near \(s_1\), with all the others still near \(w_0 \ll s_r\)}. The
+student is approximately \(W(t) \approx w_1(t)\,u_1 v_1^\top\),
+effectively \textbf{rank 1}.
 
 \textbf{Intermediate times}: As \(t\) increases, \(w_2\) switches on,
-then \(w_3\), etc. The student is approximately
+then \(w_3\), etc. The singular values \textbf{switch on one at a time},
+in decreasing order of \(s_\alpha\), each staying near \(w_0\) and then
+rising to \(s_\alpha\) over a narrow window. The student is
+approximately
 \(W(t) \approx \sum_{\alpha=1}^{k(t)} w_\alpha(t)\,u_\alpha v_\alpha^\top\)
-where \(k(t)\) increases stepwise. The \textbf{rank increases
-incrementally}.
+where \(k(t)\) increases stepwise, so the effective \textbf{rank
+increases incrementally}.
 
 \textbf{Long times} (\(t \to \infty\)): All modes converge,
 \(w_\alpha \to s_\alpha\), and \(W \to M\).
@@ -384,7 +393,8 @@ min)}\label{problem-4-lazy-regime-15-min}
 
 \subsubsection{Solution 4}\label{solution-4}
 
-\textbf{(a)} Starting from the same ODE \(\dot{w} = 2w(s - w)\), with
+\textbf{The linearization.} Starting from the same ODE
+\(\dot{w} = 2w(s - w)\), with
 \(w_0 \gg s > 0\), the weight \(w\) needs to decrease from \(w_0\) to
 \(s\). As long as \(w\) has not changed much from \(w_0\), we can write
 \(w = w_0 + \delta w\) with \(|\delta w| \ll w_0\), so:
@@ -400,7 +410,7 @@ at its initial value \(2w_0\). Note that only the NTK prefactor is
 linearized; the residual \((s - w)\) is kept exact since it drives
 learning.
 
-\textbf{(b)} The linearized ODE \(\dot{w} = 2w_0(s - w)\) is first-order
+\textbf{(a)} The linearized ODE \(\dot{w} = 2w_0(s - w)\) is first-order
 linear. Set \(\tilde{w} := w - s\), then
 \(\dot{\tilde{w}} = -2w_0\,\tilde{w}\), with solution
 \(\tilde{w}(t) = (w_0 - s)\,e^{-2w_0 t}\). Therefore:
@@ -430,7 +440,7 @@ contrast, the NTK changes from \(2w_0 \approx 0\) to \(2s\) --- a change
 of order \(s/w_0 \to \infty\) relative to the initial value --- making
 the linearization completely invalid. \(\square\)
 
-\textbf{(c)} Restoring the mode index, each mode satisfies
+\textbf{(b)} Restoring the mode index, each mode satisfies
 \(\dot{w}_\alpha \approx 2w_0(s_\alpha - w_\alpha)\) with solution:
 
 \[w_\alpha(t) = s_\alpha + (w_0 - s_\alpha)\,e^{-2w_0 t}\]
@@ -565,8 +575,9 @@ rotates to align with the task, and the test loss drops ---
 the time it takes the relevant modes to cross \(\tau\). Increasing the
 initialization scale \(\sigma\) or the width \(n\) increases \(\tau\),
 which extends the lazy phase and widens the grokking gap. This is the
-same mechanism identified by Kumar et al.~in the grokking exercise
-session. \(\square\)
+same mechanism identified by Kumar et al., \emph{Grokking as the
+Transition from Lazy to Rich Training Dynamics} (arXiv:2310.06110).
+\(\square\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
